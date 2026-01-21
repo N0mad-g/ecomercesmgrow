@@ -64,6 +64,7 @@ const SignUpForm = () => {
       password: values.password,
       fetchOptions: {
         onSuccess: () => {
+          toast.success("Conta criada com sucesso!");
           router.push("/");
         },
         onError: (error) => {
